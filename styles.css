@@ -1,0 +1,71 @@
+boby{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.ml-1{
+    margin-left: 11px;
+}
+
+.text-green{
+    color: rgb(4, 170, 109);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 1.3rem;
+}
+
+.input {
+    display: block;
+    outline: none;
+    width: 200px;
+    height: 25px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+  .input:hover{
+    border-color: blue;
+  }
+  
+  .input:is(:focus) {
+    border-width: 2px;
+    padding: 2px;
+    border-color: cornflowerblue;
+  }
+
+.b-beige{
+  background-color: rgb(255, 230, 153);
+  width: 200px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.spam{
+  display: block;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.btn{
+  color: aliceblue;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: large;
+}
+
+.btn-success{
+  background-color: rgb(4, 170, 109);
+  border-color: rgb(4, 170, 109);
+}
+
+.btn-success:hover{
+  background-color: aliceblue;
+  color: rgb(1, 133, 84);
+}
+
+.hide{
+  display: none;
+}

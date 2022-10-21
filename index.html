@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Suministros ACPM</title>
+</head>
+<body>
+    <h1 class="ml-1 text-green">Suministros ACPM</h1>
+    <form class="ml-1">
+        <div>
+            <label class="label">Tipo tanque</label>
+            <select class="input" id="select" onchange="getSelectValue()"></select>
+        </div>
+        <div class="subBase tanVer">
+            <label class="label">Alto</label>
+            <input id="tbxAlto" class="input" type="search" pattern="[0-9]">
+        </div>
+        <div class="subBase">
+            <label class="label">Ancho</label>
+            <input id="tbxAncho" class="input" type="search" pattern="[0-9]">
+        </div>
+        <div class="tanHor tanVer">
+            <label class="label">Perímetro</label>
+            <input id="tbxPerimetro" class="input" type="search" pattern="[0-9]">
+        </div>
+        <div class="subBase tanHor">
+            <label class="label">Largo</label>
+            <input id="tbxLargo" class="input" type="search" pattern="[0-9]">
+        </div>
+        <div class="b-beige tanVer">
+            <label class="label">Ancho</label>
+            <span id="ancho" class="spam"></span>
+        </div>
+        <div class="b-beige tanHor">
+            <label class="label">Diametro</label>
+            <span id="diametro" class="spam"></span>
+        </div>
+        <div class="b-beige">
+            <label class="label">Capac</label>
+            <span id="capac" class="spam"></span>
+        </div>
+        <div>
+            <label class="label">M. Inicial</label>
+            <input id="tbxMInicial" class="input" type="search" pattern="[0-9]">
+        </div>
+        <div>
+            <label class="label">M. Final</label>
+            <input id="tbxMFinal" class="input" type="search" pattern="[0-9]">
+        </div>
+        <div class="b-beige">
+            <label class="label">ACPM Inicial</label>
+            <span id="acpmInicial" class="spam"></span>
+        </div>
+        <div class="b-beige">
+            <label class="label">ACPM Final</label>
+            <span id="acpmFinal" class="spam"></span>
+        </div>
+        <div class="b-beige">
+            <label class="label">Cantidad suministrada</label>
+            <span id="sum" class="spam"></span>
+        </div>
+        <input type="button" value="Calcular" onclick="calcular()" class="btn btn-success">
+    </form>
+    <script src="init.js"></script>
+</body>
+</html>
